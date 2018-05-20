@@ -1,0 +1,3 @@
+rootProject.name = 'BillsReminderNative'
+
+include ':app'
