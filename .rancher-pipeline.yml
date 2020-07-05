@@ -1,0 +1,16 @@
+stages:
+- name: dfsdf
+  steps:
+  - runScriptConfig:
+      image: java:8
+      shellScript: |-
+        echo "to aqui"
+        java -version
+        echo " ------------------------  "
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: asdfg
+      registry: 127.0.0.1:34022
+timeout: 60
+notification: {}
